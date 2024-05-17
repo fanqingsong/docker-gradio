@@ -19,8 +19,8 @@ RUN set -e \
 
 RUN set -e \
       && /usr/bin/python3 /tmp/get-pip.py \
-      && pip install -U --no-cache-dir pip \
-      && pip install -U --no-cache-dir gradio
+      && pip install -U --no-cache-dir pip -i https://pypi.tuna.tsinghua.edu.cn/simple \
+      && pip install -U --no-cache-dir gradio -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 EXPOSE 7860
 
